@@ -254,3 +254,16 @@ console.log("Lunghezza dopo: " + charactersNames.length); // Controllo la length
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+
+// inizializzo le due variabili
+let randomIndex;
+let randomCharacter;
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  // creo una variabile per l'indice casuale usando math.floor per arrotondare per difetto
+  randomIndex = Math.floor(Math.random() * starWarsCharacters.length);
+  // creo una variabile che conterrà il personaggio casuale ed ha l'indice casuale
+  randomCharacter = starWarsCharacters[randomIndex];
+}
+
+console.log(randomCharacter);
